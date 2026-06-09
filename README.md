@@ -18,6 +18,7 @@ Server bersifat **authoritative**: seluruh aturan permainan, validasi, dan state
 - Anti invalid-packet validation
 
 **Tambahan**
+- Voice communication
 - Leaderboard, ranking, statistik pemain, riwayat match
 - Top Global Player
 - Spectator mode (pemenang otomatis jadi penonton, tetap di room)
@@ -126,8 +127,10 @@ uno-online/
 
 | Hasil | Poin |
 |---|---|
-| Menang | **+25** |
-| Kalah | **−10** (poin tidak < 0) |
+| Juara 1 | **+30** |
+| Juara 2 | **+10** |
+| Juara 3 | **-10** |
+| Kalah | **−30** |
 
 | Rank | Rentang Poin |
 |---|---|
@@ -139,21 +142,3 @@ uno-online/
 `win_rate = total_win / total_match`
 
 ---
-
-## Testing
-
-```bash
-pytest tests/ -v
-```
-
-Skenario stabilitas yang diuji: client putus bersamaan, reconnect saat giliran, spam invalid packet, dan banyak room paralel.
-
----
-
-## Tim
-
-Proyek mata kuliah Pemrograman Jaringan — ITS.
-
-## Lisensi
-
-Untuk keperluan akademik.
