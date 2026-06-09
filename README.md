@@ -32,9 +32,10 @@ Server bersifat **authoritative**: seluruh aturan permainan, validasi, dan state
 
 | Komponen | Teknologi | Keterangan |
 |---|---|---|
-| Bahasa | **Python 3.10+** | Wajib. Versi 3.10+ untuk `match-case` & type hints modern. |
+| Bahasa | **Python 3.10+** | Versi 3.10+ untuk `match-case` & type hints modern. |
 | Game engine | **Pygame** (`pygame-ce`) | Render papan, kartu, animasi, input. `pygame-ce` lebih aktif di-maintain. |
 | Networking | **`socket` (built-in) + TCP** | Inti penilaian. Protokol & layer jaringan dibangun sendiri. |
+| Networking | **UDP** | Voice communication
 | Concurrency | **`threading` + `queue` (built-in)** | Satu thread per client; mudah di-demo & di-debug. Alternatif: `asyncio`. |
 
 > **Kenapa TCP?** UNO bersifat turn-based dan diskret. Yang dibutuhkan adalah *reliable, ordered delivery* — kehilangan satu paket aksi (mis. "main kartu") merusak konsistensi state semua pemain. Jaminan TCP lebih penting daripada keunggulan latency UDP, yang lebih cocok untuk game *fast-paced*.
