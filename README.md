@@ -1,5 +1,3 @@
-# Network-Programming
-
 # UNO Online Multiplayer
 
 Game kartu **UNO** multiplayer berbasis jaringan, dibangun dengan **Python**, **Pygame**, dan **Socket Programming (TCP)**. Proyek mata kuliah Pemrograman Jaringan — Institut Teknologi Sepuluh Nopember (ITS).
@@ -123,47 +121,6 @@ uno-online/
 
 ---
 
-## Cara Menjalankan
-
-### 1. Persiapan
-
-```bash
-# clone repo
-git clone <repo-url>
-cd uno-online
-
-# buat virtual environment
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-
-# install dependencies
-pip install -r requirements.txt
-```
-
-### 2. Inisialisasi database
-
-```bash
-python -m server.db.database --init
-```
-
-### 3. Jalankan server
-
-```bash
-python -m server.main_server
-# server listen di 0.0.0.0:5555 (atur di config.py)
-```
-
-### 4. Jalankan client (di tiap pemain)
-
-```bash
-python -m client.main_client
-# atur host server di config.py atau via argumen
-```
-
----
 
 ## Sistem Poin & Rank
 
