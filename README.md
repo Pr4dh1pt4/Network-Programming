@@ -123,15 +123,29 @@ uno-online/
 
 ---
 
-
-## Sistem Poin & Rank
+## Sistem Poin & Rank 2 pemain
 
 | Hasil | Poin |
 |---|---|
-| Juara 1 | **+30** |
-| Juara 2 | **+10** |
-| Juara 3 | **-10** |
-| Kalah | **−30** |
+| Juara 1 | **+25** |
+| Kalah | **−20**
+
+## Sistem Poin & Rank 3 pemain
+
+| Hasil | Poin |
+|---|---|
+| Juara 1 | **+25** |
+| Juara 2 | **+15** |
+| Kalah | **−20** |
+
+## Sistem Poin & Rank 4 pemain
+
+| Hasil | Poin |
+|---|---|
+| Juara 1 | **+25** |
+| Juara 2 | **+15** |
+| Juara 3 | **-5** |
+| Kalah | **−20** |
 
 | Rank | Rentang Poin |
 |---|---|
